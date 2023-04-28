@@ -12,6 +12,8 @@
 		</table>
 		<table name="Formação" >
 			<column name="Título" type="TEXT" jt="-1" />
+			<column name="Data" type="TEXT" jt="-1" />
+			<column name="Instituição" prior="Descrição" type="TEXT" jt="-1" />
 			<index name="unq_Formação_Título" unique="UNIQUE_KEY" >
 				<column name="Título" />
 			</index>
@@ -39,9 +41,9 @@
 	</schema>
 	<connector name="Sqlite" database="Sqlite" driver_class="org.sqlite.JDBC" driver_jar="sqlite-jdbc-3.40.0.0.jar" driver_desc="Standard" host="localhost" port="7210" instance="C:/Users/marin/OneDrive/Documentos/GitHub/Tutorial_M2_Marina-Ladeira/SEMANA_02/02_AUT_EST_ENTREGA/ponderadaprog" useSystemProxy="false" />
 	<layout name="Main Layout" id="Layout-2a3" show_relation="columns" >
-		<entity schema="Default" name="Experiência" color="C1D8EE" x="272" y="128" />
-		<entity schema="Default" name="Formação" color="C1D8EE" x="272" y="64" />
-		<entity schema="Default" name="Mauri" color="C1D8EE" x="48" y="48" />
-		<entity schema="Default" name="Realizações" color="C1D8EE" x="272" y="240" />
+		<entity schema="Default" name="Experiência" color="C1D8EE" x="320" y="160" />
+		<entity schema="Default" name="Formação" color="C1D8EE" x="288" y="48" />
+		<entity schema="Default" name="Mauri" color="C1D8EE" x="48" y="96" />
+		<entity schema="Default" name="Realizações" color="C1D8EE" x="256" y="272" />
 	</layout>
 </project>

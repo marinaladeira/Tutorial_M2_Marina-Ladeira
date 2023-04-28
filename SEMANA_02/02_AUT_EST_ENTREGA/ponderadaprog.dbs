@@ -14,11 +14,12 @@
 			<column name="Título" type="TEXT" jt="-1" />
 			<column name="Data" type="TEXT" jt="-1" />
 			<column name="Instituição" prior="Descrição" type="TEXT" jt="-1" />
+			<column name="User_id" type="INTEGER" jt="4" />
 			<index name="unq_Formação_Título" unique="UNIQUE_KEY" >
 				<column name="Título" />
 			</index>
-			<fk name="fk_Formação" to_schema="Default" to_table="Mauri" >
-				<fk_column name="Título" pk="user_id" />
+			<fk name="fk_Formação_0" to_schema="Default" to_table="Mauri" >
+				<fk_column name="User_id" pk="user_id" />
 			</fk>
 		</table>
 		<table name="Mauri" prior="M" >

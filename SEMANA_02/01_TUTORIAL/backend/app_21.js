@@ -7,7 +7,7 @@ const sqlite3 = require('sqlite3').verbose();
 const DBPATH = '../projeto.db';
 
 app.use(express.json());
-
+ 
 /* Definição dos endpoints */
 
 // Retorna todos registros de usuários
