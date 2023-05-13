@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+</head>
+<body>
+    
+Sure! Here's an example of how you can display the data from the four tables "experiencias", "formação", "mauri", and "realizações" on your HTML page, using the data provided by the crud_cv.js file.
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV</title>
+  </head>
+  <body>
+    <h1>Experiências</h1>
+    <ul>
+      <% for (let i = 0; i < experiences.length; i++) { %>
+        <li><%= experiences[i].Empresa %> - <%= experiences[i].Data %> - <%= experiences[i].Descrição %></li>
+      <% } %>
+    </ul>
+
+    <h1>Formação</h1>
+    <ul>
+      <% for (let i = 0; i < formacoes.length; i++) { %>
+        <li><%= formacoes[i].Título %> - <%= formacoes[i].Data %> - <%= formacoes[i].Instituição %></li>
+      <% } %>
+    </ul>
+
+    <h1>Mauri</h1>
+    <ul>
+      <% for (let i = 0; i < mauris.length; i++) { %>
+        <li><%= mauris[i].nome %> - <%= mauris[i].Cargo %></li>
+      <% } %>
+    </ul>
+
+    <h1>Realizações</h1>
+    <ul>
+      <% for (let i = 0; i < realizacoes.length; i++) { %>
+        <li><%= realizacoes[i].Nome %> - <%= realizacoes[i].Data %> - <%= realizacoes[i].Descrição %></li>
+      <% } %>
+    </ul>
+</body>
+</html>
