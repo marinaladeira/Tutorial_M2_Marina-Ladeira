@@ -79,3 +79,56 @@ app.post('/inserirpessoa', urlencodedParser, (req, res) => {
     res.end();
 });
 
+//R do CRUD, read, usando método GET 
+// GET all experiences
+router.get('/experiences', (req, res) => {
+  db.query('SELECT * FROM Experiências', (error, results) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send('Internal server error');
+    } else {
+      res.status(200).json(results);
+    }
+  });
+});
+
+module.exports = router;
+// GET REALIZAÇÕES
+router.get('/realizacoes', (req, res) => {
+    db.query('SELECT * FROM Realizações', (error, results) => {
+      if (error) {
+        console.log(error);
+        res.status(500).send('Internal server error');
+      } else {
+        res.status(200).json(results);
+      }
+    });
+  });
+  
+  module.exports = router;
+  // GET all Mauri
+router.get('/Mauri', (req, res) => {
+    db.query('SELECT * FROM Mauri', (error, results) => {
+      if (error) {
+        console.log(error);
+        res.status(500).send('Internal server error');
+      } else {
+        res.status(200).json(results);
+      }
+    });
+  });
+  
+  module.exports = router;
+  // GET FORMAÇÃO
+router.get('/formacao', (req, res) => {
+    db.query('SELECT * FROM Formação', (error, results) => {
+      if (error) {
+        console.log(error);
+        res.status(500).send('Internal server error');
+      } else {
+        res.status(200).json(results);
+      }
+    });
+  });
+  
+  module.exports = router;
