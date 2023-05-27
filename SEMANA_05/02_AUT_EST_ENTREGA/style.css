@@ -1,3 +1,80 @@
-h2{
-    color: blue;
+.nome {
+    background-color: #4A67F0;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.foto {
+    margin-top: 0%;
+    margin-left: 0%;
+    position: fixed;
+    z-index: 2;
+}
+
+.form-sobre {
+    position: fixed;
+    top: 65%;
+    left: 30px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-formacao {
+    position: fixed;
+    top: 20%;
+    left: 30px;
+    background-color: #c2c0c090;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-realizacoes {
+  position: fixed;
+  top: 20%;
+  left: 73%;
+  height: 31.5%;
+  background-color: #c2c0c090;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-realizacoes h4 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.form-realizacoes p {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.form-experiencias {
+    position: fixed;
+    top: 20%;
+    left: 55%;
+    transform: translateX(-50%);
+    background-color: #c2c0c090;
+    padding: 20px;
+    border-radius: 5px;                                                                                 
+    text-align: center;
 }
