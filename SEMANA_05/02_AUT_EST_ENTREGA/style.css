@@ -1,3 +1,12 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    position: relative;
+}
+
 .nome {
     background-color: #4A67F0;
     text-align: center;
@@ -37,14 +46,14 @@
 }
 
 .form-realizacoes {
-  position: fixed;
-  top: 20%;
-  left: 73%;
-  height: 31.5%;
-  background-color: #c2c0c090;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 73%;
+    height: 31.5%;
+    background-color: #c2c0c090;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .form-realizacoes h4 {
